@@ -1,0 +1,33 @@
+# post de inserção de produtos
+POST http://localhost:4002/products
+content-type: application/json
+
+{
+    "name": "Caneta vermelha",
+    "price": 3
+}
+
+###
+
+# get para pegar os produtos inseridos acima
+
+GET http://localhost:4002/products
+
+###
+
+# get para pegar uma produto especifico com ID
+GET http://localhost:4002/products/
+
+###
+# put para alterar produtos pelo ID
+PUT http://localhost:4002/products/c374645b-0bf6-4f6f-996c-ec990bc29282
+content-type: application/json
+
+{
+    "name": "Caneta Azul",
+    "price": 3
+}
+
+###
+# delete de produtos pelo id
+DELETE http://localhost:4002/products/067cb5dc-51da-422e-ad2b-2880e00a2465
